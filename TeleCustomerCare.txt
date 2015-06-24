@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class TeleCustomerCare {
+	static Scanner userInput=new Scanner(System.in);
+	public static void main(String[] args) {
+		int k=1;
+		while(k!=0)
+		{
+			int lan;
+			System.out.println("1.To continue in english press 1 \n 2.Hindi mein jaankari ke liye 2 dabayein");
+			lan=userInput.nextInt();
+			if(lan==1)
+			{	
+				int j=1;
+				while(j!=0)
+				{
+				int ch,i=1;;
+				System.out.println("Enter Choice");
+				System.out.println("1.To know your bill press 1 \n 	2.For porting request press 2 \n 3.To talk to our customer care executive press 3\n	4.To go back to previous menu press 9 \n5.To exit press 0");
+				ch=userInput.nextInt();
+				while(i!=0)
+				{
+				switch(ch)
+				{
+				case 1:System.out.println("Your Bill is 800 rupees");
+						System.out.println("1.To go back to previous menu press 9 \n 2. To exit press 0");
+					int ch1;
+						ch1=userInput.nextInt();
+						if (ch1==9)
+						i=0;
+						if(ch1==0)
+							{i=0;j=0;k=0;}
+						break;
+				case 2:System.out.println("Your porting request is under process");
+				System.out.println("1.To go back to previous menu press 9 \n 2. To exit press 0");
+			           int ch2;
+				ch2=userInput.nextInt();
+				if (ch2==9)
+				i=0;
+				if(ch2==0)
+					{i=0;j=0;k=0;}
+				break;
+				case 3:System.out.println("All our executives are busy learning Java. Please try again later");
+				System.out.println("1.To go back to previous menu press 9 \n 2. To exit press 0");
+		           int ch3;
+		           ch3=userInput.nextInt();
+		           if (ch3==9)
+		        	   	i=0;
+		           if(ch3==0)
+		           		{i=0;j=0;k=0;}
+		           break;
+				case 9:{i=0;
+				break;}
+				case 0:{ i=0;j=0;k=0;
+				break;}
+						
+				default : System.out.println("Wrong Turn");		
+				}
+				}
+				}
+			}
+				else if(lan==2)
+			{
+				int j=1;
+				while(j!=0)
+				{
+				int ch,i=1;;
+				System.out.println("Kripya Jankari Ke Liye Diye Gaye Numbers Me se koi choice Karen");
+				System.out.println("1.Bill ki jankari ke liye 1 dabayen \n 	2. porting ki suvida ke liye 2 dabayen \n 3.Customer care executive se baat karne ke liye  3 dabayen\n	4.Pichle menu p jane ke liye 9 dabayen \n5.To exit press 0");
+				ch=userInput.nextInt();
+				while(i!=0)
+				{
+				switch(ch)
+				{
+				case 1:System.out.println("Aapka Bill 800 rupees hai");
+						System.out.println("1.Pichle menu pe wapas jane ke liye 9 dabayen \n 2. To exit press 0");
+					int ch1;
+						ch1=userInput.nextInt();
+						if (ch1==9)
+						i=0;
+						if(ch1==0)
+							{i=0;j=0;k=0;}
+						break;
+				case 2:System.out.println("porting request puri ki ja rahi hai kripya pratiksha karen");
+				System.out.println("1.Pichle menu pe wapas jane ke liye 9 dabayen \n 2. To exit press 0");
+			           int ch2;
+				ch2=userInput.nextInt();
+				if (ch2==9)
+				i=0;
+				if(ch2==0)
+					{i=0;j=0;k=0;}
+				break;
+				case 3:System.out.println("Hamare sare pratinidhi are busy learning Java. Please try again later");
+				System.out.println("1.Pichle menu pe wapas jane ke liye 9 dabayen \n 2. To exit press 0");
+		           int ch3;
+		           ch3=userInput.nextInt();
+		           if (ch3==9)
+		        	   	i=0;
+		           if(ch3==0)
+		           		{i=0;j=0;k=0;}
+		           break;
+				case 9:i=0;
+				break;
+				case 0: i=0;j=0;k=0;
+						break;
+				default : System.out.println("Galat Ank");		
+				}
+				}
+				}
+				
+		}
+	}
+
+}
+}
+	
